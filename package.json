@@ -1,0 +1,23 @@
+{
+    "name": "com.b12.cms",
+    "version": "0.1.0-Pre-Release",
+    "displayName": "B12-CMS-Library",
+    "description": "",
+    "type": "tool",
+    "unity": "2020.3",
+    "hideInEditor": false,
+    "documentationUrl": "",
+    "changelogUrl": "",
+    "licensesUrl": "",
+    "keywords": [
+        "Showroom",
+        "Studio-B12",
+        "B12",
+        "Sub-Level"
+    ],
+    "author": {
+        "name": "Studio B12 | Niko Becker",
+        "email": "n.becker@b12-gruppe.de",
+        "url": ""
+    }
+}
