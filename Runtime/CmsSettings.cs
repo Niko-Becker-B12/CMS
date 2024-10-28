@@ -2,7 +2,6 @@ using Hextant;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using static System.Net.Mime.MediaTypeNames;
 
 #if UNITY_EDITOR
 using Hextant.Editor;
