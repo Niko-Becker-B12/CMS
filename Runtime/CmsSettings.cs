@@ -1,20 +1,28 @@
 using Hextant;
-using Hextant.Editor;
 using System.Collections.Generic;
 using System.IO;
-using UnityEditor;
 using UnityEngine;
+using static System.Net.Mime.MediaTypeNames;
+
+#if UNITY_EDITOR
+using Hextant.Editor;
+using UnityEditor;
+#endif
 
 
 namespace B12.CMS
 {
 
+#if UNITY_EDITOR
     [Settings(SettingsUsage.RuntimeProject, "B12/CMS Settings")]
+#endif
     public class CmsSettings : Settings<CmsSettings>
     {
 
+#if UNITY_EDITOR
         [SettingsProvider]
         public static SettingsProvider GetSettingsProvider() => instance.GetSettingsProvider();
+#endif
 
         [SerializeField]
         string depotUrl;

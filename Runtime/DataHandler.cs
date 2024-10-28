@@ -14,8 +14,6 @@ using UnityEngine.Video;
 using UnityEditor;
 using System.Threading;
 using Sirenix.OdinInspector;
-using static System.Net.Mime.MediaTypeNames;
-using System.Diagnostics;
 
 
 namespace B12.CMS
