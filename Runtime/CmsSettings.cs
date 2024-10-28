@@ -2,6 +2,7 @@ using Hextant;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using static System.Net.Mime.MediaTypeNames;
 
 #if UNITY_EDITOR
 using Hextant.Editor;
@@ -29,7 +30,7 @@ namespace B12.CMS
         public string DepotUrl
         {
             get => depotUrl;
-            set => Set(ref depotUrl, value);
+            set => depotUrl = value;
         }
 
         [SerializeField]
@@ -38,7 +39,7 @@ namespace B12.CMS
         public string StartUrl
         {
             get => startUrl;
-            set => Set(ref startUrl, value);
+            set => startUrl = value;
         }
 
         [SerializeField]
@@ -47,7 +48,7 @@ namespace B12.CMS
         public List<DataGroup> AssetTags
         {
             get => assetTags;
-            set => Set(ref assetTags, value);
+            set => assetTags = value;
         }
 
         [SerializeField]
@@ -56,7 +57,7 @@ namespace B12.CMS
         public string EditorBasedSaveLocation
         {
             get => editorBasedSaveLocation;
-            set => Set(ref editorBasedSaveLocation, value);
+            set => editorBasedSaveLocation = value;
         }
 
         [SerializeField]
@@ -65,7 +66,7 @@ namespace B12.CMS
         public bool RedownloadFiles
         {
             get => redownloadFiles;
-            set => Set(ref redownloadFiles, value);
+            set => redownloadFiles = value;
         }
 
 

@@ -7,8 +7,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading;
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace B12.CMS
 {
@@ -476,10 +479,12 @@ public class DataInterpreter
             Directory.CreateDirectory(directory);
         }
 
+#if UNITY_EDITOR
         // Create and save the asset
         AssetDatabase.CreateAsset(dataObject, path);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
+#endif
 
         Debug.Log($"Saved {dataObject.name} as an asset at {path}");
     }
