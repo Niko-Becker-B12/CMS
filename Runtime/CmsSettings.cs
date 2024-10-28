@@ -72,6 +72,9 @@ namespace B12.CMS
         private void OnEnable()
         {
 
+#if UNITY_EDITOR
+            SaveSettingsToJson();
+#else
             if (File.Exists($"{Application.persistentDataPath}/CMS-Settings.json"))
             {
 
@@ -86,6 +89,7 @@ namespace B12.CMS
                 SaveSettingsToJson();
 
             }
+#endif
 
         }
 
@@ -99,5 +103,4 @@ namespace B12.CMS
         }
 
     }
-
 }
